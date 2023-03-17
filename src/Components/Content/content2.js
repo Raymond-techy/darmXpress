@@ -14,10 +14,8 @@ export const Content2 = ({ title, text, image }) => {
             {title}
           </h5>
           <p className="mb-6 text-gray-600 text-left leading-8">{text}</p>
-          <button
-            type="button"
-            className="px-8 py-3 font-semibold rounded dark:bg-orange-900 dark:text-gray-800">
-            Basic
+          <button class="px-8 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-orange-900 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            Explore More
           </button>
           <hr className="mb-5 border-gray-300" />
         </div>

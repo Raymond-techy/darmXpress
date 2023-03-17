@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Funmigation, Regular, Spring } from "../Components/plans/regular";
-
+import Footer from "../Components/Footer";
 const Services = () => {
   const [activePlan, setActivePlan] = useState("regular");
   const plans = [
@@ -79,6 +79,7 @@ const Services = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

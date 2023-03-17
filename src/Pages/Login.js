@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaArrowCircleRight, FaEyeSlash, FaEye } from "react-icons/fa";
 // import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 // import { Button, Spinner } from "flowbite-react";
 function Login() {
   const [formData, setFormData] = useState({
@@ -62,7 +62,7 @@ function Login() {
             Sign in to your account
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Or
+            Or{" "}
             <Link
               to="/register"
               className="font-medium text-indigo-600 hover:text-indigo-500">

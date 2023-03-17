@@ -12,6 +12,20 @@ code {
     monospace;
 }
 
+.passwordBox {
+  position: relative;
+}
+.visible {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  cursor: pointer;
+  z-index: 11;
+}
+.space {
+  margin-top: 3500;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
