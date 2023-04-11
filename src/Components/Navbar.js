@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import DarmXpress from "../assets/logo.png";
+import Example from "./Nav2";
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -8,10 +9,6 @@ export const Nav = () => {
     {
       target: "/",
       title: "Home",
-    },
-    {
-      target: "/services",
-      title: "Services",
     },
     {
       target: "/pricing",
@@ -22,6 +19,13 @@ export const Nav = () => {
       title: "Contact Us",
     },
   ];
+
+  const subPricing = [
+    { href: "/services/drycleaning", label: "Dry Cleaning" },
+    { href: "/services/plumbing", label: "Plumbing" },
+    { href: "/services/electrical", label: "Electrical" },
+  ];
+
   return (
     <div className="bg-gray-100 fixed top-0 left-0 right-0 space z-40">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -31,15 +35,30 @@ export const Nav = () => {
               <img className="w-24 text-teal-accent-400" src={DarmXpress} />
             </Link>
             <ul className="flex items-center hidden space-x-8 lg:flex">
-              {links.map((link) => (
-                <li key={link.target}>
-                  <Link
-                    to={link.target}
-                    className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-orange-accent-400">
-                    {link.title}
-                  </Link>
-                </li>
-              ))}
+              {/* {links.map((link) => ( */}
+              <li>
+                <Link
+                  to={links[0].target}
+                  className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-orange-accent-400">
+                  {links[0].title}
+                </Link>
+              </li>
+              {/* ))} */}
+              <Example title="Services" sub={subPricing} />
+              <li>
+                <Link
+                  to={links[1].target}
+                  className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-orange-accent-400">
+                  {links[1].title}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={links[2].target}
+                  className="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-orange-accent-400">
+                  {links[2].title}
+                </Link>
+              </li>
             </ul>
           </div>
           <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -118,6 +137,8 @@ export const Nav = () => {
                           </Link>
                         </li>
                       ))}
+                      <Example title="Pricing" sub={subPricing} />
+                      <Example title="Services" sub={subPricing} />
                       <li>
                         <Link
                           onClick={() => setIsMenuOpen(false)}

@@ -4,30 +4,30 @@ import DarmXpress from "../assets/logo.png";
 const Register = () => {
   return (
     <div>
-      <section class="bg-white">
-        <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
-          <section class="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
+      <section className="bg-white">
+        <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
+          <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
             <img
               alt="Night"
               src="https://images.unsplash.com/photo-1617195737496-bc30194e3a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              class="absolute inset-0 h-full w-full object-cover opacity-80"
+              className="absolute inset-0 h-full w-full object-cover opacity-80"
             />
 
-            <div class="hidden lg:relative lg:block lg:p-12">
-              <a class="block text-white" href="/">
-                <span class="sr-only">Home</span>
+            <div className="hidden lg:relative lg:block lg:p-12">
+              <span className="block text-white">
+                <span className="sr-only">Home</span>
                 <Link
                   to="/"
                   className="inline-flex items-center mr-8 bg-white rounded-full">
                   <img className="p-4 text-teal-accent-400" src={DarmXpress} />
                 </Link>
-              </a>
+              </span>
 
-              <h2 class="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+              <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
                 Welcome to DarmXpress
               </h2>
 
-              <p class="mt-4 leading-relaxed text-white/90">
+              <p className="mt-4 leading-relaxed text-white/90">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Eligendi nam dolorum aliquam, quibusdam aperiam voluptatum.
               </p>
@@ -36,39 +36,37 @@ const Register = () => {
 
           <main
             aria-label="Main"
-            class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6">
-            <div class="max-w-xl lg:max-w-3xl">
-              <div class="relative -mt-16 block lg:hidden">
-                <a
-                  class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-blue-600 sm:h-20 sm:w-20"
-                  href="/">
-                  <span class="sr-only">Home</span>
-                  <a class="block text-white" href="/">
-                    <span class="sr-only">Home</span>
+            className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6">
+            <div className="max-w-xl lg:max-w-3xl">
+              <div className="relative -mt-16 block lg:hidden">
+                <span className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-blue-600 sm:h-20 sm:w-20">
+                  <span className="sr-only">Home</span>
+                  <span className="block text-white">
+                    <span className="sr-only">Home</span>
                     <Link to="/">
                       <img
                         className="p-4 w-46 text-teal-accent-400"
                         src={DarmXpress}
                       />
                     </Link>
-                  </a>
-                </a>
+                  </span>
+                </span>
 
-                <h1 class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
+                <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
                   Welcome to DarmXpress
                 </h1>
 
-                <p class="mt-4 leading-relaxed text-gray-500">
+                <p className="mt-4 leading-relaxed text-gray-500">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Eligendi nam dolorum aliquam, quibusdam aperiam voluptatum.
                 </p>
               </div>
 
-              <form action="#" class="mt-8 grid grid-cols-6 gap-6">
-                <div class="col-span-6 sm:col-span-3">
+              <form action="#" className="mt-8 grid grid-cols-6 gap-6">
+                <div className="col-span-6 sm:col-span-3">
                   <label
-                    for="FirstName"
-                    class="block text-sm font-medium text-gray-700">
+                    htmlFor="FirstName"
+                    className="block text-sm font-medium text-gray-700">
                     First Name
                   </label>
 
@@ -76,14 +74,14 @@ const Register = () => {
                     type="text"
                     id="FirstName"
                     name="first_name"
-                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                    className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                   />
                 </div>
 
-                <div class="col-span-6 sm:col-span-3">
+                <div className="col-span-6 sm:col-span-3">
                   <label
-                    for="LastName"
-                    class="block text-sm font-medium text-gray-700">
+                    htmlFor="LastName"
+                    className="block text-sm font-medium text-gray-700">
                     Last Name
                   </label>
 
@@ -91,14 +89,14 @@ const Register = () => {
                     type="text"
                     id="LastName"
                     name="last_name"
-                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                    className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                   />
                 </div>
 
-                <div class="col-span-6">
+                <div className="col-span-6">
                   <label
-                    for="Email"
-                    class="block text-sm font-medium text-gray-700">
+                    htmlFor="Email"
+                    className="block text-sm font-medium text-gray-700">
                     Email
                   </label>
 
@@ -106,14 +104,14 @@ const Register = () => {
                     type="email"
                     id="Email"
                     name="email"
-                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                    className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                   />
                 </div>
 
-                <div class="col-span-6 sm:col-span-3">
+                <div className="col-span-6 sm:col-span-3">
                   <label
-                    for="Password"
-                    class="block text-sm font-medium text-gray-700">
+                    htmlFor="Password"
+                    className="block text-sm font-medium text-gray-700">
                     Password
                   </label>
 
@@ -121,14 +119,14 @@ const Register = () => {
                     type="password"
                     id="Password"
                     name="password"
-                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                    className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                   />
                 </div>
 
-                <div class="col-span-6 sm:col-span-3">
+                <div className="col-span-6 sm:col-span-3">
                   <label
-                    for="PasswordConfirmation"
-                    class="block text-sm font-medium text-gray-700">
+                    htmlFor="PasswordConfirmation"
+                    className="block text-sm font-medium text-gray-700">
                     Password Confirmation
                   </label>
 
@@ -136,48 +134,48 @@ const Register = () => {
                     type="password"
                     id="PasswordConfirmation"
                     name="password_confirmation"
-                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+                    className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
                   />
                 </div>
 
-                <div class="col-span-6">
-                  <label for="MarketingAccept" class="flex gap-4">
+                <div className="col-span-6">
+                  <label htmlFor="MarketingAccept" className="flex gap-4">
                     <input
                       type="checkbox"
                       id="MarketingAccept"
                       name="marketing_accept"
-                      class="h-5 w-5 rounded-md border-gray-200 bg-white shadow-sm"
+                      className="h-5 w-5 rounded-md border-gray-200 bg-white shadow-sm"
                     />
 
-                    <span class="text-sm text-gray-700">
+                    <span className="text-sm text-gray-700">
                       I want to receive emails about events, product updates and
                       company announcements.
                     </span>
                   </label>
                 </div>
 
-                <div class="col-span-6">
-                  <p class="text-sm text-gray-500">
+                <div className="col-span-6">
+                  <p className="text-sm text-gray-500">
                     By creating an account, you agree to our
-                    <a href="#" class="text-gray-700 underline">
+                    <a href="#" className="text-gray-700 underline">
                       terms and conditions
                     </a>
                     and
-                    <a href="#" class="text-gray-700 underline">
+                    <a href="#" className="text-gray-700 underline">
                       privacy policy
                     </a>
                     .
                   </p>
                 </div>
 
-                <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
-                  <button class="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500">
+                <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
+                  <button className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500">
                     Create an account
                   </button>
 
-                  <p class="mt-4 text-sm text-gray-500 sm:mt-0">
+                  <p className="mt-4 text-sm text-gray-500 sm:mt-0">
                     Already have an account?
-                    <a href="#" class="text-gray-700 underline">
+                    <a href="#" className="text-gray-700 underline">
                       Log in
                     </a>
                     .
