@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import * as Yup from "yup";
 import "./index.css";
 import UserDetail from "./Page2";
+import Complaint from "../Electrical/Complaint";
 const goods = [
   { name: "Agbada(Coloured)", id: 1, price: 1000 },
   { name: "Agbada(White)", id: 2, price: 1300 },
@@ -126,13 +127,18 @@ const Calculator = ({ handleNextStep }) => {
             </form>
           </div>
         </div>
-
         <div className="relative  h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
           <img
             alt="Welcome"
             src="https://images.unsplash.com/photo-1630450202872-e0829c9d6172?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
             className="absolute inset-0 h-full w-full object-cover"
           />
+        </div>
+        <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12 w-full">
+          <h3 className="mb-4 font-semibold text-gray-900">
+            Complaint not Listed?
+          </h3>
+          <Complaint />
         </div>
       </section>
     </>

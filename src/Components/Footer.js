@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="text-center sm:text-left">
+            <div className="text-left">
               <p className="text-lg font-medium text-gray-900">About Us</p>
 
               <nav aria-label="Footer About Nav" className="mt-8">
@@ -52,15 +52,6 @@ const Footer = () => {
                       Privacy Center
                     </a>
                   </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/">
-                      Legal
-                    </a>
-                  </li>
-
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
@@ -72,7 +63,7 @@ const Footer = () => {
               </nav>
             </div>
 
-            <div className="text-center sm:text-left">
+            <div className="text-left">
               <p className="text-lg font-medium text-gray-900">Our Services</p>
 
               <nav aria-label="Footer Services Nav" className="mt-8">
@@ -81,7 +72,7 @@ const Footer = () => {
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
                       href="/">
-                      Data and Report Analysis
+                      Dry Cleaning
                     </a>
                   </li>
 
@@ -89,7 +80,7 @@ const Footer = () => {
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
                       href="/">
-                      Family Support Assistant
+                      Electrical Repair
                     </a>
                   </li>
 
@@ -97,91 +88,12 @@ const Footer = () => {
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
                       href="/">
-                      Graphics design
+                      Plumbing Services
                     </a>
                   </li>
                 </ul>
               </nav>
             </div>
-
-            <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Quick Links</p>
-
-              <nav aria-label="Footer Resources Nav" className="mt-8">
-                <ul className="space-y-4 text-sm">
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/">
-                      Dashboard
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/">
-                      Plans
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/">
-                      Rewards
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/">
-                      Women Products
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            {/* <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Helpful Links</p>
-
-              <nav aria-label="Footer Helpful Nav" className="mt-8">
-                <ul className="space-y-4 text-sm">
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/">
-                      FAQs
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/">
-                      Support
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="group flex justify-center gap-1.5 sm:justify-start"
-                      href="/">
-                      <span className="text-gray-700 transition group-hover:text-gray-700/75">
-                        Live Chat
-                      </span>
-
-                      <span className="relative flex h-2 w-2">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"></span>
-                        <span className="relative inline-flex h-2 w-2 rounded-full bg-teal-500"></span>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div> */}
           </div>
 
           <div className="mt-16">

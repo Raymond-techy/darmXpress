@@ -1,6 +1,7 @@
 import React from "react";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
+import Complaint from "../Electrical/Complaint";
 
 const goods = [
   { id: "1", name: "Kitchen tap replacement(Grade1)", price: 6500 },
@@ -117,6 +118,12 @@ const PlumbingCalc = ({ handleNextStep, data }) => {
           </svg>
         </button>
       </form>
+      <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
+        <h3 className="mb-4 font-semibold text-gray-900">
+          Complaint not Listed?
+        </h3>
+        <Complaint />
+      </div>
     </div>
   );
 };

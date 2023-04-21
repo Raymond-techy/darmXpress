@@ -21,7 +21,7 @@ export const Nav = () => {
   ];
 
   const subPricing = [
-    { href: "/services/drycleaning", label: "Dry Cleaning" },
+    { href: "/services/cleaning", label: "Cleaning" },
     { href: "/services/plumbing", label: "Plumbing" },
     { href: "/services/electrical", label: "Electrical" },
   ];

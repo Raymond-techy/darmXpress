@@ -10,15 +10,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import Contact from "./Pages/Contact";
-import Nav2 from "./Components/Nav2";
-import Calculator, {
-  Clothing,
-  WatchCloth,
-} from "./Components/DryCleaning/Page1";
-import Page2 from "./Components/DryCleaning/Page2";
-import Calculator2 from "./Components/Electrical/Calc2";
+import { Clothing } from "./Components/DryCleaning/Page1";
 import { Electrical } from "./Components/Electrical";
 import { Plumbing } from "./Components/Plumbing/Index";
+import Cleaning from "./Pages/Cleaning";
 
 function App() {
   return (
@@ -28,8 +23,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/services/drycleaning" element={<Clothing />} />
+        <Route path="/services" element={<Cleaning />} />
+        <Route path="/services/cleaning" element={<Services />} />
+        <Route path="/services/dryCleaning" element={<Clothing />} />
         <Route path="/services/plumbing" element={<Plumbing />} />
         <Route path="/services/electrical" element={<Electrical />} />
         <Route path="/register" element={<Register />} />

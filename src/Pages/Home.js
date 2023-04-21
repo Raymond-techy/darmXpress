@@ -3,76 +3,19 @@ import { Content } from "../Components/Content/content1";
 import { Content2 } from "../Components/Content/content2";
 import Footer from "../Components/Footer";
 import { Link } from "react-router-dom";
+
 const texts = [
   "Why clean when someone else can do it for you?  DarmXpress is here to deliver the best cleaning experience for your house and office. Contact us and we’ll be happy to match you with champions among cleaning experts who are super capable, dedicated and sweet, and who’ll take delicate care of your lovely home and office. We perform strict background checks and detailed screening of every of our workers, for your peace of mind. So what are you waiting for? Book now!",
+  "Electrical maintenance is without question, one of the foremost and sure steps towards fostering a safe environment.  A home is designed to be a safe haven for its dwellers, and therefore anything and everything that favors home safety should always be accorded first priority. ",
+  "Proper maintenance of the plumbing system at your place is essential to ensure that water either clean or waste is running properly. This is necessary because proper maintenance of the plumbing system will provide a healthy environment for you and your family. DarmXpress won’t overlook when they are determined to save time and money  of people while avoiding stress in matters of home upkeep.",
 ];
 
 const Home = () => {
   return (
     <div>
-      {/* <div className="relative">
-        <img
-          src="https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-          className="absolute inset-0 object-cover w-full h-full"
-          alt=""
-        />
-        <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
-          <svg
-            className="absolute inset-x-0 bottom-0 text-white"
-            viewBox="0 0 1160 163">
-            <path
-              fill="currentColor"
-              d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z"
-            />
-          </svg>
-          <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="flex flex-col items-center justify-between xl:flex-row">
-              <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                  The quick, brown fox <br className="hidden md:block" />
-                  jumps over a lazy dog
-                </h2>
-                <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-                  quae.
-                </p>
-                <a
-                  href="/"
-                  aria-label=""
-                  className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700">
-                  Learn more
-                  <svg
-                    className="inline-block w-3 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 12 12">
-                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="">
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
-            {/* <div
-              className="flex flex-col text-center w-full mb-20  bg-opacity-30 overflow-hidden py-40 
-            ">
-              <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-                ROOF PARTY POLAROID
-              </h2>
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-orange-900">
-                Store for a quick repair and cleaning
-              </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                We help in repairing the likely electric faults, plumbing faults
-                and best cleaning services all at an affordable, secured
-                environment with quick delivery.
-              </p>
-            </div> */}
-
             <section className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
               <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
@@ -130,9 +73,8 @@ const Home = () => {
                     </h2>
                   </div>
                   <div className="flex-grow">
-                    <p className="leading-relaxed text-base">
-                      Blue bottle crucifix vinyl post-ironic four dollar toast
-                      vegan taxidermy. Gastropub indxgo juice poutine.
+                    <p className="leading-relaxed text-base text-center">
+                      At an affordable price.
                     </p>
                   </div>
                 </div>
@@ -158,9 +100,8 @@ const Home = () => {
                     </h2>
                   </div>
                   <div className="flex-grow">
-                    <p className="leading-relaxed text-base">
-                      Blue bottle crucifix vinyl post-ironic four dollar toast
-                      vegan taxidermy. Gastropub indxgo juice poutine.
+                    <p className="leading-relaxed text-base text-center ">
+                      Help You with Cleaning
                     </p>
                   </div>
                 </div>
@@ -187,9 +128,8 @@ const Home = () => {
                     </h2>
                   </div>
                   <div className="flex-grow">
-                    <p className="leading-relaxed text-base">
-                      Blue bottle crucifix vinyl post-ironic four dollar toast
-                      vegan taxidermy. Gastropub indxgo juice poutine.
+                    <p className="leading-relaxed text-base text-center">
+                      No dissapointment
                     </p>
                   </div>
                 </div>
@@ -207,25 +147,28 @@ const Home = () => {
         </div>
       </div>
       <Content
+        target="/services/cleaning"
         title="Cleaning services"
         text={texts[0]}
         image={
-          "https://img.freepik.com/free-photo/young-girl-is-holding-cleaning-product-gloves-rags-basin-white-wall_1150-21780.jpg?size=626&ext=jpg&ga=GA1.2.1938237910.1672528748&semt=ais"
+          "https://images.unsplash.com/photo-1580256081112-e49377338b7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xlYW5lcnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
         }
       />
 
       <Content2
-        title="Cleaning services"
-        text={texts[0]}
+        target="/services/electrical"
+        title="Electrical Repair"
+        text={texts[1]}
         image={
-          "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+          "https://images.unsplash.com/photo-1618090584126-129cd1f3fbae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZWxlY3RyaWNpYW58ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
         }
       />
       <Content
-        title="Cleaning services"
-        text={texts[0]}
+        target="/services/plumbing"
+        title="Plumbing Services"
+        text={texts[2]}
         image={
-          "https://img.freepik.com/free-photo/young-girl-is-holding-cleaning-product-gloves-rags-basin-white-wall_1150-21780.jpg?size=626&ext=jpg&ga=GA1.2.1938237910.1672528748&semt=ais"
+          "https://images.unsplash.com/photo-1523413555809-0fb1d4da238d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGx1bWJlcnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
         }
       />
       <Footer />
