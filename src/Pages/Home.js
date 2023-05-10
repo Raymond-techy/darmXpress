@@ -12,9 +12,9 @@ const texts = [
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="">
-        <section className="text-gray-600 body-font">
+        <section className="text-gray-600 body-font ">
           <div className="container px-5 py-24 mx-auto">
             <section className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
               <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
