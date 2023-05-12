@@ -2,6 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
 import Complaint from "./Complaint";
+import Footer from "../Footer";
 const goods = [
   { id: "1", name: "A room socket and fault replacement", price: 1500 },
   { id: "2", name: "A room lampholder fault and replacement", price: 1500 },
@@ -193,6 +194,7 @@ const Calculator2 = ({ handleNextStep, data }) => {
         </h3>
         <Complaint />
       </div>
+      <Footer />
     </div>
   );
 };

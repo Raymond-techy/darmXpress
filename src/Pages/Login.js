@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaArrowCircleRight, FaEyeSlash, FaEye } from "react-icons/fa";
-// import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-// import { toast } from "react-toastify";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { toast } from "react-toastify";
 // import { Button, Spinner } from "flowbite-react";
 function Login() {
   const [formData, setFormData] = useState({
@@ -22,33 +22,34 @@ function Login() {
   const submitForm = async (e) => {
     e.preventDefault();
     setLoading(true);
-    // try {
-    //   const auth = getAuth();
-    //   const userCredential = await signInWithEmailAndPassword(
-    //     auth,
-    //     email,
-    //     password
-    //   );
-    //   if (userCredential.user) {
-    //     setLoading(false);
-    //     navigate("/profile");
-    //   }
-    // } catch (error) {
-    //   console.log(error.code);
-    //   if (error.code === "auth/network-request-failed") {
-    //     toast.error(
-    //       "Network Error",
-    //       { toastId: "r34-xAcu9#@(*" },
-    //       { autoClose: 1000 }
-    //     );
-    //   } else {
-    //     toast.error(
-    //       "Invalid Email or password",
-    //       { toastId: "r34-xAcu93#@(*" },
-    //       { autoClose: 1000 }
-    //     );
-    //   }
-    // }
+    try {
+      const auth = getAuth();
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      if (userCredential.user) {
+        setLoading(false);
+        navigate("/");
+      }
+      console.log("Logged in");
+    } catch (error) {
+      console.log(error.code);
+      if (error.code === "auth/network-request-failed") {
+        toast.error(
+          "Network Error",
+          { toastId: "r34-xAcu9#@(*" },
+          { autoClose: 1000 }
+        );
+      } else {
+        toast.error(
+          "Invalid Email or password",
+          { toastId: "r34-xAcu93#@(*" },
+          { autoClose: 1000 }
+        );
+      }
+    }
     setLoading(false);
   };
   const passwordToggle = () => {

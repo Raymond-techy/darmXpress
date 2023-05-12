@@ -56,7 +56,7 @@ const Cleaning = () => {
                       />
                     </svg>
                     <span className="relative">Store </span>
-                  </span>{" "}
+                  </span>
                   For a quick Cleaning
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
@@ -71,7 +71,7 @@ const Cleaning = () => {
       </div>
 
       <Content2
-        target="/"
+        target="/services/dryCleaning"
         title="House Cleaning"
         text={texts[1]}
         image={
@@ -79,7 +79,7 @@ const Cleaning = () => {
         }
       />
       <Content
-        target="/"
+        target="/services/dryCleaning"
         title="Office Cleaning"
         text={texts[0]}
         image={

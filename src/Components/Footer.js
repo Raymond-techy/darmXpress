@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -69,27 +70,27 @@ const Footer = () => {
               <nav aria-label="Footer Services Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
                   <li>
-                    <a
+                    <Link
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/">
+                      to="/services/cleaning">
                       Dry Cleaning
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/">
+                      to="/services/electrical">
                       Electrical Repair
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/">
+                      to="/services/plumbing">
                       Plumbing Services
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
