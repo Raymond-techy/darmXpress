@@ -188,7 +188,7 @@ const Calculator2 = ({ handleNextStep, data }) => {
           </svg>
         </button>
       </form>
-      <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
+      <div className="relative rounded-lg bg-white p-8 sm:p-12">
         <h3 className="mb-4 font-semibold text-gray-900">
           Complaint not Listed?
         </h3>
