@@ -137,8 +137,16 @@ export const Nav = () => {
                           </Link>
                         </li>
                       ))}
-                      <Example title="Pricing" sub={subPricing} />
-                      <Example title="Services" sub={subPricing} />
+                      <Example
+                        title="Pricing"
+                        sub={subPricing}
+                        handleClick={() => setIsMenuOpen(false)}
+                      />
+                      <Example
+                        title="Services"
+                        sub={subPricing}
+                        handleClick={() => setIsMenuOpen(false)}
+                      />
                       <li>
                         <Link
                           onClick={() => setIsMenuOpen(false)}

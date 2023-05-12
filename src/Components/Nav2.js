@@ -8,7 +8,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example({ sub, title }) {
+export default function Example({ sub, title, handleClick }) {
   return (
     <Menu as="div" className="text-left relative  ">
       <div>
@@ -36,6 +36,7 @@ export default function Example({ sub, title }) {
               <Menu.Item>
                 {({ active }) => (
                   <Link
+                    onClick={handleClick}
                     to={link.href}
                     className={classNames(
                       active ? "bg-gray-100 text-gray-900" : "text-gray-700",
