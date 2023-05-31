@@ -8,7 +8,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example({ sub, title, handleClick }) {
+export default function DropDown({ sub, title, handleClick }) {
   return (
     <Menu as="div" className="text-left relative  ">
       <div>
@@ -39,7 +39,9 @@ export default function Example({ sub, title, handleClick }) {
                     onClick={handleClick}
                     to={link.href}
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      active
+                        ? "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-orange-purple-accent-400"
+                        : "text-gray-700",
                       "block px-4 py-2 text-sm"
                     )}>
                     {link.label}

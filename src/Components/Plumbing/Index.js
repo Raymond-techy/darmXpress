@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import UserDetail from "../DryCleaning/Page2";
 import PlumbingCalc from "./Plumbing";
 import Footer from "../Footer";
 
-export const Plumbing = () => {
+export const PlumbingShop = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [currentStep, setCurrentStep] = useState(0);
   const [data, setData] = useState();
 

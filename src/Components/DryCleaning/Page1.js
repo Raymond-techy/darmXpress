@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useFormik, Formik, ErrorMessage } from "formik";
 import { toast } from "react-toastify";
 import * as Yup from "yup";
@@ -173,7 +173,10 @@ export const WatchCloth = () => {
   );
 };
 
-export const Clothing = () => {
+export const ClothingShop = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [currentStep, setCurrentStep] = useState(0);
   const [data, setData] = useState();
 

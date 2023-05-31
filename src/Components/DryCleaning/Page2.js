@@ -1,5 +1,5 @@
 import React from "react";
-import { Formik, Form } from "formik";
+import { Formik, Form, Field } from "formik";
 
 import * as Yup from "yup";
 
@@ -11,6 +11,12 @@ const validationSchema = Yup.object().shape({
   email: Yup.string().required().email().label("Email"),
   messsage: Yup.string().label("message"),
   address: Yup.string().required().label("Address"),
+  cardNumber: Yup.string()
+    .matches(
+      /^[0-9]{4}\s?[0-9]{4}\s?[0-9]{4}\s?[0-9]{4}$/,
+      "Invalid card number"
+    )
+    .required("Card number is required"),
   telephone: Yup.string()
     .matches(phoneRegExp, "Please enter a valid Nigerian phone number")
     .required("Phone number is required"),
@@ -21,6 +27,35 @@ const UserDetail = ({ handleNextStep, data }) => {
     handleNextStep(values);
   };
 
+  const formatExpiryDate = (value) => {
+    // Remove non-digit characters from the input value
+    const expiryDate = value.replace(/\D/g, "");
+
+    // Apply formatting by adding slashes
+    let formattedDate = "";
+    for (let i = 0; i < expiryDate.length; i++) {
+      if (i === 2) {
+        formattedDate += "/";
+      }
+      formattedDate += expiryDate[i];
+    }
+    return formattedDate;
+  };
+
+  const formatCardNumber = (value) => {
+    // Remove non-digit characters from the input value
+    const cardNumber = value.replace(/\D/g, "");
+
+    // Apply formatting by adding spaces
+    let formattedNumber = "";
+    for (let i = 0; i < cardNumber.length; i++) {
+      if (i > 0 && i % 4 === 0) {
+        formattedNumber += " ";
+      }
+      formattedNumber += cardNumber[i];
+    }
+    return formattedNumber;
+  };
   console.log(data);
 
   return (
@@ -39,8 +74,9 @@ const UserDetail = ({ handleNextStep, data }) => {
                 messsage: "",
                 address: "",
                 telephone: "",
+                cardNumber: "",
               }}>
-              {({ errors, touched, handleBlur, handleChange }) => (
+              {({ errors, touched, handleBlur, handleChange, values }) => (
                 <Form>
                   <div className="grid grid-cols-6 gap-4">
                     <div className="col-span-3">
@@ -162,13 +198,30 @@ const UserDetail = ({ handleNextStep, data }) => {
                           <label htmlFor="CardNumber" className="sr-only">
                             Card Number
                           </label>
-
                           <input
+                            onChange={(e) => {
+                              const formattedValue = formatCardNumber(
+                                e.target.value
+                              );
+                              handleChange({
+                                target: {
+                                  name: "cardNumber",
+                                  value: formattedValue,
+                                },
+                              });
+                            }}
+                            value={values.cardNumber}
+                            name="cardNumber"
                             type="text"
                             id="CardNumber"
                             placeholder="Card Number"
                             className="relative mt-1 w-full rounded-t-md border-gray-200 focus:z-10 sm:text-sm"
                           />
+                          {errors.cardNumber && touched.cardNumber ? (
+                            <p className="mt-2 text-sm text-red-700">
+                              {errors.cardNumber}
+                            </p>
+                          ) : null}
                         </div>
 
                         <div className="flex -space-x-px">
@@ -179,8 +232,21 @@ const UserDetail = ({ handleNextStep, data }) => {
 
                             <input
                               type="text"
-                              id="CardExpiry"
-                              placeholder="Expiry Date"
+                              name="expiryDate"
+                              placeholder="MM/YY"
+                              maxLength="5"
+                              onChange={(e) => {
+                                const formattedValue = formatExpiryDate(
+                                  e.target.value
+                                );
+                                handleChange({
+                                  target: {
+                                    name: "expiryDate",
+                                    value: formattedValue,
+                                  },
+                                });
+                              }}
+                              value={values.expiryDate}
                               className="relative w-full rounded-bl-md border-gray-200 focus:z-10 sm:text-sm"
                             />
                           </div>

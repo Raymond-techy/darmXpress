@@ -15,7 +15,7 @@ export const Content2 = ({ title, text, image, target }) => {
             <Link
               to={target}
               className="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-6 py-4 leading-6 rounded border-blue-700 bg-orange-900 text-white hover:text-white hover:bg-blue-800 hover:border-blue-800 focus:ring focus:ring-blue-500 focus:ring-opacity-50 active:bg-blue-700 active:border-blue-700">
-              <span>Explore More</span>
+              <span>Book Now!</span>
               <svg
                 fill="currentColor"
                 viewBox="0 0 20 20"

@@ -2,11 +2,10 @@ import React from "react";
 import Footer from "../Components/Footer";
 import { Content } from "../Components/Content/content1";
 import { Content2 } from "../Components/Content/content2";
-import { Link } from "react-router-dom";
 const texts = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac",
+  "Cleanliness is next to godliness. You can save your time for something else by using DarmXpress cleaning services to handle your laundry professionally at an affordable, secured and you will feel more comfortable in the cloths and around people. Therefore, yes, cleanliness is indeed next to godliness by making use of Darm Xpress cleaning services.",
   "We help you create a good and conducive leaving environment in your house with proper hygiene by removing all the dirt that can cause harm to health.",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris .",
+  "Cleanliness is next to godliness. You can save your time for something else by using DarmXpress cleaning services to handle your laundry professionally at an affordable, secured and you will feel more comfortable in the cloths and around people. Therefore, yes, cleanliness is indeed next to godliness by making use of Darm Xpress cleaning services.",
 ];
 
 const Cleaning = () => {
@@ -57,46 +56,50 @@ const Cleaning = () => {
                             height="24"
                           />
                         </svg>
-                        <span className="relative">Store </span>
+                        <span className="relative">Store</span>
                       </span>
-                      For a quick Cleaning
+                      {"  "}For a quick Cleaning
                     </h2>
                     <p className="text-base text-gray-700 md:text-lg">
-                      We offer the best cleaning services in a secured
-                      environment with better hygiene using the appropriate
-                      working instrument at an affordable price
+                      Cleanliness is next to godliness. You can save your time
+                      for something else by using DarmXpress cleaning services
+                      to handle your laundry professionally at an affordable,
+                      secured and you will feel more comfortable in the cloths
+                      and around people. Therefore, yes, cleanliness is indeed
+                      next to godliness by making use of Darm Xpress cleaning
+                      services.
                     </p>
                   </div>
                 </div>
               </div>
+              <Content2
+                target="/services/shop/dryCleaning"
+                title="House Cleaning"
+                text={texts[1]}
+                image={
+                  "https://images.unsplash.com/photo-1527694224012-be005121c774?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdXNlJTIwY2xlYW5pbmd8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                }
+              />
+              <Content
+                target="/services/shop/dryCleaning"
+                title="Office Cleaning"
+                text={texts[0]}
+                image={
+                  "https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2xlYW5pbmclMjBvZmZpY2V8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                }
+              />
+
+              <Content2
+                target="/services/shop/dryCleaning"
+                title="Clothes Dry Cleaning"
+                text={texts[2]}
+                image={
+                  "https://images.unsplash.com/photo-1489274495757-95c7c837b101?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGNsZWFuaW5nfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                }
+              />
             </div>
           </div>
 
-          <Content2
-            target="/services/dryCleaning"
-            title="House Cleaning"
-            text={texts[1]}
-            image={
-              "https://images.unsplash.com/photo-1527694224012-be005121c774?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdXNlJTIwY2xlYW5pbmd8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-            }
-          />
-          <Content
-            target="/services/dryCleaning"
-            title="Office Cleaning"
-            text={texts[0]}
-            image={
-              "https://images.unsplash.com/photo-1579487785973-74d2ca7abdd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2xlYW5pbmclMjBvZmZpY2V8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-            }
-          />
-
-          <Content2
-            target="/services/dryCleaning"
-            title="Clothes Dry Cleaning"
-            text={texts[2]}
-            image={
-              "https://images.unsplash.com/photo-1489274495757-95c7c837b101?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGNsZWFuaW5nfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-            }
-          />
           <Footer />
         </div>
       </div>

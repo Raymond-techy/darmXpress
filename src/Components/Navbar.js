@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import DarmXpress from "../assets/logo.png";
-import Example from "./Nav2";
+import DropDown from "./NavComponent";
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -44,7 +44,7 @@ export const Nav = () => {
                 </Link>
               </li>
               {/* ))} */}
-              <Example title="Services" sub={subPricing} />
+              <DropDown title="Services" sub={subPricing} />
               <li>
                 <Link
                   to={links[1].target}
@@ -137,12 +137,12 @@ export const Nav = () => {
                           </Link>
                         </li>
                       ))}
-                      <Example
+                      <DropDown
                         title="Pricing"
                         sub={subPricing}
                         handleClick={() => setIsMenuOpen(false)}
                       />
-                      <Example
+                      <DropDown
                         title="Services"
                         sub={subPricing}
                         handleClick={() => setIsMenuOpen(false)}

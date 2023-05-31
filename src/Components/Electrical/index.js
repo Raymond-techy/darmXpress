@@ -2,7 +2,7 @@ import { useState } from "react";
 import Calculator2 from "./Calc2";
 import UserDetail from "../DryCleaning/Page2";
 
-export const Electrical = () => {
+export const ElectricalShop = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [data, setData] = useState();
 

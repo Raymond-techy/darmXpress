@@ -54,9 +54,6 @@ const Calculator2 = ({ handleNextStep, data }) => {
         image:
           "https://images.unsplash.com/photo-1606676539940-12768ce0e762?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
       });
-      // Handle form submission
-      // ...
-      // Set submitting to false after submission is complete
       setSubmitting(false);
     },
   });
